@@ -1,0 +1,47 @@
+{
+    "name": "triwinvendor/amqp",
+    "replace": {
+        "videlalvaro/php-amqplib": "self.version"
+    },
+    "type": "library",
+    "description": "Formerly videlalvaro/php-amqplib.  This library is a pure PHP implementation of the AMQP protocol. It's been tested against RabbitMQ.",
+    "keywords": ["rabbitmq", "message", "queue"],
+    "homepage": "https://github.com/php-amqplib/php-amqplib/",
+    "authors": [
+        {
+            "name": "Alvaro Videla",
+            "role": "Original Maintainer"
+        },
+        {
+            "name": "Raúl Araya",
+            "email": "nubeiro@gmail.com",
+            "role": "Maintainer"
+        },
+        {
+            "name": "Luke Bakken",
+            "email": "luke@bakken.io",
+            "role": "Maintainer"
+        },
+        {
+            "name": "Ramūnas Dronga",
+            "email": "github@ramuno.lt",
+            "role": "Maintainer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PhpAmqpLib\\": "PhpAmqpLib/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PhpAmqpLib\\Tests\\Functional\\": "tests/Functional",
+            "PhpAmqpLib\\Tests\\Unit\\": "tests/Unit"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "3.0-dev"
+        }
+    }
+}
